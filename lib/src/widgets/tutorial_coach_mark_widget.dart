@@ -151,7 +151,6 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget> implem
       switch (i.align) {
         case ContentAlign.bottom:
           {
-            weight = MediaQuery.of(context).size.width;
             left = 0;
             top = positioned.dy + haloHeight;
             bottom = null;
@@ -159,7 +158,6 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget> implem
           break;
         case ContentAlign.top:
           {
-            weight = MediaQuery.of(context).size.width;
             left = 0;
             top = null;
             bottom = haloHeight + (MediaQuery.of(context).size.height - positioned.dy);
