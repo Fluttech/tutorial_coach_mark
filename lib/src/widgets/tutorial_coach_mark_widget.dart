@@ -152,7 +152,7 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget> implem
         case ContentAlign.bottom:
           {
             left = 0;
-            top = positioned.dy + haloHeight;
+            top = target.offset.dy + target.size.height - 16;
             bottom = null;
           }
           break;
@@ -160,7 +160,7 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget> implem
           {
             left = 0;
             top = null;
-            bottom = haloHeight + (MediaQuery.of(context).size.height - positioned.dy);
+            bottom = haloHeight + (MediaQuery.of(context).size.height - positioned.dy) - 8;
           }
           break;
         case ContentAlign.left:
